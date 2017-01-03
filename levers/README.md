@@ -10,10 +10,10 @@ For more details about the task, see our [paper](https://arxiv.org/abs/1605.0773
 ## Usage
 The code uses Torch and run on a GPU for speed-up. To start training, run
 
-    th lever.lua --reward_only --comm
+    th levers.lua --reward_only --comm
     
 Here, option `--comm` enables a communication between the agents, and `--reward_only` picks a reinforcement learning instead of supervised learning.
 
 The following script can be used to replicated the experiments in the paper.
 
-    th lever.lua --batchsize 512 --lr 10 --clip .01 --hdim 64 --apg 5 --nlevers 5 --reward_only --maxiter 100000 --comm
+    th levers.lua --batchsize 512 --lr 10 --clip .01 --hdim 64 --apg 5 --nlevers 5 --reward_only --maxiter 100000 --comm
